@@ -1,0 +1,359 @@
+@import "../assets/fonts/Vazir/font.css";
+body{
+    background-color: #30394b;
+    color: #fff;
+    direction: rtl;
+    transition: .4s all;
+}
+.light{
+    background-color: rgba(255,255, 255) !important;
+    color: #222222 !important;
+}
+.d-ltr{
+    direction: ltr;
+}
+.d-rtl{
+    direction: rtl;
+}
+.empty{
+    width: 0;
+    height: 0;
+    display: none;
+}
+.fa{
+    font-size: 30px;
+}
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+.mr-auto{
+    margin-right: auto;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.mt-1{
+    margin-top: 1.5rem !important;
+}
+.pl-0{
+    padding-left: 0;
+}
+.p-1{
+padding: 4px;
+}
+.p-2{
+padding: 8px;
+}
+.p-3{
+padding: 16px;
+}
+.p-4{
+padding: 24px;
+}
+.p-5{
+padding: 35px;
+}
+.px-2{
+    padding:0 8px;
+    }
+    .px-3{
+    padding:0 16px;
+    }
+    .px-4{
+    padding:0 24px;
+    }
+    .px-5{
+    padding:0 35px;
+    }
+.py-2{
+padding:8px 0;
+}
+.py-3{
+padding:16px 0;
+}
+.py-4{
+padding:24px 0;
+}
+.py-5{
+padding:35px 0;
+}
+.txt-right{
+    text-align: right;
+}
+.txt-left{
+    text-align: left;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-justify{
+    text-align: justify;
+}
+.d-block{
+    display: block;
+}
+*:not(.fa) {
+    font-family: vazir !important;
+}
+.demo {
+    margin: 2rem auto;
+    position: relative;
+    text-align: center;
+    width: 90%;
+}
+@media only screen and (min-width:576px){
+    .demo{
+        width: 65%;
+    }
+}
+@media only screen and (min-width:991px){
+    .demo{
+        width: 400px;
+    }
+}
+
+#input {
+    border-radius: 5px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    margin: 30px 0;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+}
+#input::-webkit-scrollbar,html::-webkit-scrollbar {
+    display: none;
+  }
+#show::-webkit-scrollbar{
+    background: transparent;
+    width: 4px;
+}
+#show::-webkit-scrollbar-thumb{
+    border-radius: 50rem;
+    background: #03A9F4;    
+}
+#show {
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 10rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(3, 169, 244, 0.5);
+    font-weight: 500; 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+#input,#show{
+    width: 100%;
+}
+#show:hover {
+ border: 1px solid #03A9F4;
+}
+#setting_icon{
+    cursor: pointer;
+    transition: .25s all;
+    opacity: .78;
+}
+#setting_icon:hover{
+    opacity: 1;
+}
+#setting{
+    height: 0;
+    width: 100%;
+    background-color: rgba(48,57,75,.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    direction: ltr;
+    /* transition: .3s height cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: .4s height ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#setting>div{
+    background-color:#fff;
+    box-shadow: 0 0 30px #fff;
+    position: relative;
+    border-radius:7px;
+    color: #222;
+    padding: 2rem 0;
+}
+.hidden-scroll{
+    height: 100%;
+    overflow: hidden;
+}
+#setting_close{
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    fill: #c70039;
+    cursor: pointer;
+}
+#setting .demo div{
+    margin:.6rem 0;
+}
+#setting .demo .box-check{
+    margin-top: 2rem;
+    padding-right: 1.5rem;
+    display: flex;
+
+}
+.box-check span{
+    width: 80%;
+    cursor: default;
+    padding-left: 2rem;
+    text-align: right;
+}
+.ch-advance{
+    position: relative;
+    text-align: right;
+    width: 50%;
+    display: block;  
+    cursor: pointer;      
+}
+.ch-off:before,.ch-off:after{
+    transition: .35s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ch-advance:before{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    content: '';
+    width: 45px;
+    height: 17px;
+    border-radius: 50rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.ch-advance:after{
+    position: absolute;
+    content: '';
+    top: 3px;
+    right:24px;
+    height: 17px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #cdcdcd;
+    border: 1px solid #ccc;
+}
+.ch-on:before{
+background-color:lightskyblue;
+}
+.ch-on:after{
+    position: absolute;
+    content: '';
+    top: 3px;
+    right: 0 !important;
+    height: 17px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #0779e4;
+}
+.division span{
+    text-align: right;
+    width: 90% !important;
+    font-size: 14px;
+    color: #6a197d;
+}
+.count-division label{
+    width: 37%;
+    padding-left: 2.5rem;
+    display: block;
+    float: right;
+}
+.count-division input{
+    border-radius: 50rem;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+    font-size: 13.5px;
+    outline: none;
+}
+.count-division input[type=text]{
+    width: 22%;
+    font-size: 14.5px;
+}
+@font-face{
+    font-family: varel;
+    src: url(Varela-Regular.ttf);
+}
+#theme{
+    position: absolute;
+    right: 0;
+    top: -18px;
+    font-family:varel !important;
+}
+#theme span{
+    font-family:varel !important;
+}
+#theme label.ch-off:after{
+    right: 70%;
+}
+#label_help *{
+    font-family: varel !important;
+}
+#label_help p.processing{
+    position: relative;
+}
+#label_help p.processing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#label_help p.processing>span{
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 0 .2rem;
+    margin-top: .25rem;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: loading ease-out .65s infinite;
+}
+@keyframes loading{
+    0% {
+        transform: scale(0);
+      }
+      35%,50%
+       {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0);
+      }
+}
+#label_help p.processing>span:first-child{
+    margin-left:.4rem;
+    animation-delay: .12s;
+}
+#label_help p.processing>span:nth-child(2){
+    animation-delay: .22s;
+}
+#label_help p.processing>span:last-child{
+    animation-delay: .32s;
+}
+#copy{
+    position: absolute;
+    top: 0;
+    padding: .3rem;
+    background:#20bf6b;
+    border-radius: .3rem;    
+    right:10px;
+    cursor: pointer;
+}
+#copy svg{
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+}
+#copied{
+    position: absolute;
+    top: -40px;
+    right: -2px;
+    font-size: 14px;
+    opacity: 0;
+    transition: .3s all;
+}
